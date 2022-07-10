@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "azslider",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/adamzarn/AZSlider",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ad0e205b6ca58840849b72f1366b2676a7f7f735"
+      }
+    }
+  ],
+  "version" : 2
+}
