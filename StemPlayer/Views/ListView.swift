@@ -19,8 +19,9 @@ struct ListView: View {
                     HStack {
                         Text(song.name)
                         Spacer()
-                        if stemPlayer.isPlaying && stemPlayer.currentSong == song {
+                        if shouldShowIsPlayingIcon(for: song) {
                             Image(systemName: "speaker.wave.3.fill")
+                                .foregroundColor(.gray)
                         }
                     }
                     .frame(maxWidth: .infinity)
@@ -41,5 +42,9 @@ struct ListView: View {
                 })
             }
         }
+    }
+    
+    func shouldShowIsPlayingIcon(for song: Song) -> Bool {
+        return stemPlayer.isPlaying && stemPlayer.currentSong == song
     }
 }

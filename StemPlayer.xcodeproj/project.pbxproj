@@ -22,6 +22,8 @@
 		DB246D50287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */; };
 		DB246D51287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D4C287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav */; };
 		DB246D53287B5BF300D00B19 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D52287B5BF300D00B19 /* ListView.swift */; };
+		DB246D58287B689400D00B19 /* Shape+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D57287B689400D00B19 /* Shape+Extension.swift */; };
+		DB246D5A287B69E100D00B19 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D59287B69E100D00B19 /* Color+Extension.swift */; };
 		DB6AD09B287A0BD1004168DE /* StemPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AD09A287A0BD1004168DE /* StemPlayer.swift */; };
 		DB6AD09D287A0C04004168DE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AD09C287A0C04004168DE /* Track.swift */; };
 		DB6AD09F287A0C22004168DE /* PadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AD09E287A0C22004168DE /* PadType.swift */; };
@@ -38,12 +40,14 @@
 		DB246D42287B556D00D00B19 /* AVAudioPlayerArray+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioPlayerArray+Extension.swift"; sourceTree = "<group>"; };
 		DB246D44287B55C800D00B19 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		DB246D46287B55E900D00B19 /* AVAudioPlayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioPlayer+Extension.swift"; sourceTree = "<group>"; };
-		DB246D48287B59AA00D00B19 /* 00_HolyHolyHoly.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 00_HolyHolyHoly.wav; path = Tracks/00_HolyHolyHoly.wav; sourceTree = SOURCE_ROOT; };
-		DB246D49287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 02_HolyHolyHolyAlto.wav; path = Tracks/02_HolyHolyHolyAlto.wav; sourceTree = SOURCE_ROOT; };
-		DB246D4A287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 04_HolyHolyHolyBass.wav; path = Tracks/04_HolyHolyHolyBass.wav; sourceTree = SOURCE_ROOT; };
-		DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 03_HolyHolyHolyTenor.wav; path = Tracks/03_HolyHolyHolyTenor.wav; sourceTree = SOURCE_ROOT; };
-		DB246D4C287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 01_HolyHolyHolySoprano.wav; path = Tracks/01_HolyHolyHolySoprano.wav; sourceTree = SOURCE_ROOT; };
+		DB246D48287B59AA00D00B19 /* 00_HolyHolyHoly.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 00_HolyHolyHoly.wav; path = StemPlayer/AudioFiles/00_HolyHolyHoly.wav; sourceTree = SOURCE_ROOT; };
+		DB246D49287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 02_HolyHolyHolyAlto.wav; path = StemPlayer/AudioFiles/02_HolyHolyHolyAlto.wav; sourceTree = SOURCE_ROOT; };
+		DB246D4A287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 04_HolyHolyHolyBass.wav; path = StemPlayer/AudioFiles/04_HolyHolyHolyBass.wav; sourceTree = SOURCE_ROOT; };
+		DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 03_HolyHolyHolyTenor.wav; path = StemPlayer/AudioFiles/03_HolyHolyHolyTenor.wav; sourceTree = SOURCE_ROOT; };
+		DB246D4C287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 01_HolyHolyHolySoprano.wav; path = StemPlayer/AudioFiles/01_HolyHolyHolySoprano.wav; sourceTree = SOURCE_ROOT; };
 		DB246D52287B5BF300D00B19 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DB246D57287B689400D00B19 /* Shape+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shape+Extension.swift"; sourceTree = "<group>"; };
+		DB246D59287B69E100D00B19 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		DB6AD09A287A0BD1004168DE /* StemPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemPlayer.swift; sourceTree = "<group>"; };
 		DB6AD09C287A0C04004168DE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		DB6AD09E287A0C22004168DE /* PadType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadType.swift; sourceTree = "<group>"; };
@@ -81,19 +85,12 @@
 		DB136D8E2879D58300C4F636 /* StemPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				DB246D3F287B553E00D00B19 /* Extensions */,
 				DB136D8F2879D58300C4F636 /* StemPlayerApp.swift */,
-				DB136D912879D58300C4F636 /* PlayerView.swift */,
-				DB246D52287B5BF300D00B19 /* ListView.swift */,
 				DB6AD09A287A0BD1004168DE /* StemPlayer.swift */,
-				DB6AD0A2287A0C70004168DE /* Song.swift */,
-				DB6AD09C287A0C04004168DE /* Track.swift */,
-				DB6AD09E287A0C22004168DE /* PadType.swift */,
-				DB246D48287B59AA00D00B19 /* 00_HolyHolyHoly.wav */,
-				DB246D4C287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav */,
-				DB246D49287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav */,
-				DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */,
-				DB246D4A287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav */,
+				DB246D55287B680900D00B19 /* Views */,
+				DB246D54287B680300D00B19 /* Models */,
+				DB246D3F287B553E00D00B19 /* Extensions */,
+				DB246D56287B682800D00B19 /* AudioFiles */,
 				DB136D932879D58400C4F636 /* Assets.xcassets */,
 				DB136D952879D58400C4F636 /* Preview Content */,
 			);
@@ -115,8 +112,41 @@
 				DB246D42287B556D00D00B19 /* AVAudioPlayerArray+Extension.swift */,
 				DB246D44287B55C800D00B19 /* Double+Extension.swift */,
 				DB246D46287B55E900D00B19 /* AVAudioPlayer+Extension.swift */,
+				DB246D57287B689400D00B19 /* Shape+Extension.swift */,
+				DB246D59287B69E100D00B19 /* Color+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DB246D54287B680300D00B19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB6AD0A2287A0C70004168DE /* Song.swift */,
+				DB6AD09C287A0C04004168DE /* Track.swift */,
+				DB6AD09E287A0C22004168DE /* PadType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB246D55287B680900D00B19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB136D912879D58300C4F636 /* PlayerView.swift */,
+				DB246D52287B5BF300D00B19 /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB246D56287B682800D00B19 /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DB246D48287B59AA00D00B19 /* 00_HolyHolyHoly.wav */,
+				DB246D4C287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav */,
+				DB246D49287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav */,
+				DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */,
+				DB246D4A287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav */,
+			);
+			path = AudioFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB246D47287B55E900D00B19 /* AVAudioPlayer+Extension.swift in Sources */,
+				DB246D58287B689400D00B19 /* Shape+Extension.swift in Sources */,
 				DB6AD0A3287A0C70004168DE /* Song.swift in Sources */,
 				DB6AD09F287A0C22004168DE /* PadType.swift in Sources */,
 				DB246D45287B55C800D00B19 /* Double+Extension.swift in Sources */,
@@ -211,6 +242,7 @@
 				DB246D53287B5BF300D00B19 /* ListView.swift in Sources */,
 				DB246D41287B555D00D00B19 /* TrackArray+Extension.swift in Sources */,
 				DB6AD09D287A0C04004168DE /* Track.swift in Sources */,
+				DB246D5A287B69E100D00B19 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
