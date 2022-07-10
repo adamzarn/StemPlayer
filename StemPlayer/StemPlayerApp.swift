@@ -11,7 +11,7 @@ import SwiftUI
 struct StemPlayerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlayerView()
         }
     }
 }

@@ -8,17 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		DB136D902879D58300C4F636 /* StemPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D8F2879D58300C4F636 /* StemPlayerApp.swift */; };
-		DB136D922879D58300C4F636 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D912879D58300C4F636 /* ContentView.swift */; };
+		DB136D922879D58300C4F636 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D912879D58300C4F636 /* PlayerView.swift */; };
 		DB136D942879D58400C4F636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB136D932879D58400C4F636 /* Assets.xcassets */; };
 		DB136D972879D58400C4F636 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB136D962879D58400C4F636 /* Preview Assets.xcassets */; };
+		DB246D3E287A67BA00D00B19 /* AZSlider in Frameworks */ = {isa = PBXBuildFile; productRef = DB246D3D287A67BA00D00B19 /* AZSlider */; };
+		DB246D41287B555D00D00B19 /* TrackArray+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D40287B555D00D00B19 /* TrackArray+Extension.swift */; };
+		DB246D43287B556D00D00B19 /* AVAudioPlayerArray+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D42287B556D00D00B19 /* AVAudioPlayerArray+Extension.swift */; };
+		DB246D45287B55C800D00B19 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D44287B55C800D00B19 /* Double+Extension.swift */; };
+		DB246D47287B55E900D00B19 /* AVAudioPlayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D46287B55E900D00B19 /* AVAudioPlayer+Extension.swift */; };
+		DB246D4D287B59AA00D00B19 /* 00_HolyHolyHoly.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D48287B59AA00D00B19 /* 00_HolyHolyHoly.wav */; };
+		DB246D4E287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D49287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav */; };
+		DB246D4F287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D4A287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav */; };
+		DB246D50287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */; };
+		DB246D51287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D4C287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav */; };
+		DB246D53287B5BF300D00B19 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D52287B5BF300D00B19 /* ListView.swift */; };
+		DB6AD09B287A0BD1004168DE /* StemPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AD09A287A0BD1004168DE /* StemPlayer.swift */; };
+		DB6AD09D287A0C04004168DE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AD09C287A0C04004168DE /* Track.swift */; };
+		DB6AD09F287A0C22004168DE /* PadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AD09E287A0C22004168DE /* PadType.swift */; };
+		DB6AD0A3287A0C70004168DE /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AD0A2287A0C70004168DE /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB136D8C2879D58300C4F636 /* StemPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StemPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB136D8F2879D58300C4F636 /* StemPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemPlayerApp.swift; sourceTree = "<group>"; };
-		DB136D912879D58300C4F636 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB136D912879D58300C4F636 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		DB136D932879D58400C4F636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB136D962879D58400C4F636 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB246D40287B555D00D00B19 /* TrackArray+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackArray+Extension.swift"; sourceTree = "<group>"; };
+		DB246D42287B556D00D00B19 /* AVAudioPlayerArray+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioPlayerArray+Extension.swift"; sourceTree = "<group>"; };
+		DB246D44287B55C800D00B19 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		DB246D46287B55E900D00B19 /* AVAudioPlayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioPlayer+Extension.swift"; sourceTree = "<group>"; };
+		DB246D48287B59AA00D00B19 /* 00_HolyHolyHoly.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 00_HolyHolyHoly.wav; path = Tracks/00_HolyHolyHoly.wav; sourceTree = SOURCE_ROOT; };
+		DB246D49287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 02_HolyHolyHolyAlto.wav; path = Tracks/02_HolyHolyHolyAlto.wav; sourceTree = SOURCE_ROOT; };
+		DB246D4A287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 04_HolyHolyHolyBass.wav; path = Tracks/04_HolyHolyHolyBass.wav; sourceTree = SOURCE_ROOT; };
+		DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 03_HolyHolyHolyTenor.wav; path = Tracks/03_HolyHolyHolyTenor.wav; sourceTree = SOURCE_ROOT; };
+		DB246D4C287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 01_HolyHolyHolySoprano.wav; path = Tracks/01_HolyHolyHolySoprano.wav; sourceTree = SOURCE_ROOT; };
+		DB246D52287B5BF300D00B19 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DB6AD09A287A0BD1004168DE /* StemPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemPlayer.swift; sourceTree = "<group>"; };
+		DB6AD09C287A0C04004168DE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		DB6AD09E287A0C22004168DE /* PadType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadType.swift; sourceTree = "<group>"; };
+		DB6AD0A2287A0C70004168DE /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB246D3E287A67BA00D00B19 /* AZSlider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +81,19 @@
 		DB136D8E2879D58300C4F636 /* StemPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				DB246D3F287B553E00D00B19 /* Extensions */,
 				DB136D8F2879D58300C4F636 /* StemPlayerApp.swift */,
-				DB136D912879D58300C4F636 /* ContentView.swift */,
+				DB136D912879D58300C4F636 /* PlayerView.swift */,
+				DB246D52287B5BF300D00B19 /* ListView.swift */,
+				DB6AD09A287A0BD1004168DE /* StemPlayer.swift */,
+				DB6AD0A2287A0C70004168DE /* Song.swift */,
+				DB6AD09C287A0C04004168DE /* Track.swift */,
+				DB6AD09E287A0C22004168DE /* PadType.swift */,
+				DB246D48287B59AA00D00B19 /* 00_HolyHolyHoly.wav */,
+				DB246D4C287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav */,
+				DB246D49287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav */,
+				DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */,
+				DB246D4A287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav */,
 				DB136D932879D58400C4F636 /* Assets.xcassets */,
 				DB136D952879D58400C4F636 /* Preview Content */,
 			);
@@ -65,6 +106,17 @@
 				DB136D962879D58400C4F636 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB246D3F287B553E00D00B19 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB246D40287B555D00D00B19 /* TrackArray+Extension.swift */,
+				DB246D42287B556D00D00B19 /* AVAudioPlayerArray+Extension.swift */,
+				DB246D44287B55C800D00B19 /* Double+Extension.swift */,
+				DB246D46287B55E900D00B19 /* AVAudioPlayer+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +135,9 @@
 			dependencies = (
 			);
 			name = StemPlayer;
+			packageProductDependencies = (
+				DB246D3D287A67BA00D00B19 /* AZSlider */,
+			);
 			productName = StemPlayer;
 			productReference = DB136D8C2879D58300C4F636 /* StemPlayer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +166,9 @@
 				Base,
 			);
 			mainGroup = DB136D832879D58300C4F636;
+			packageReferences = (
+				DB246D3C287A67BA00D00B19 /* XCRemoteSwiftPackageReference "AZSlider" */,
+			);
 			productRefGroup = DB136D8D2879D58300C4F636 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +183,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB246D4E287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav in Resources */,
 				DB136D972879D58400C4F636 /* Preview Assets.xcassets in Resources */,
+				DB246D4F287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav in Resources */,
+				DB246D51287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav in Resources */,
 				DB136D942879D58400C4F636 /* Assets.xcassets in Resources */,
+				DB246D50287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav in Resources */,
+				DB246D4D287B59AA00D00B19 /* 00_HolyHolyHoly.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +200,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB136D922879D58300C4F636 /* ContentView.swift in Sources */,
+				DB246D47287B55E900D00B19 /* AVAudioPlayer+Extension.swift in Sources */,
+				DB6AD0A3287A0C70004168DE /* Song.swift in Sources */,
+				DB6AD09F287A0C22004168DE /* PadType.swift in Sources */,
+				DB246D45287B55C800D00B19 /* Double+Extension.swift in Sources */,
+				DB246D43287B556D00D00B19 /* AVAudioPlayerArray+Extension.swift in Sources */,
+				DB136D922879D58300C4F636 /* PlayerView.swift in Sources */,
 				DB136D902879D58300C4F636 /* StemPlayerApp.swift in Sources */,
+				DB6AD09B287A0BD1004168DE /* StemPlayer.swift in Sources */,
+				DB246D53287B5BF300D00B19 /* ListView.swift in Sources */,
+				DB246D41287B555D00D00B19 /* TrackArray+Extension.swift in Sources */,
+				DB6AD09D287A0C04004168DE /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +411,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB246D3C287A67BA00D00B19 /* XCRemoteSwiftPackageReference "AZSlider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamzarn/AZSlider";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB246D3D287A67BA00D00B19 /* AZSlider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB246D3C287A67BA00D00B19 /* XCRemoteSwiftPackageReference "AZSlider" */;
+			productName = AZSlider;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB136D842879D58300C4F636 /* Project object */;
 }
