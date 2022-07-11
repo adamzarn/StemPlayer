@@ -15,12 +15,12 @@ class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     @Published var isPlaying: Bool = false
     @Published var currentTime: Double = 0 {
         didSet {
-            currentTimeString = tracks.first?.audioPlayer.currentTime.timeString ?? "-:--"
+            currentTimeString = tracks.referenceAudioPlayer?.currentTime.timeString ?? "-:--"
         }
     }
     @Published var currentTotalTime: Double = 1 {
         didSet {
-            currentTotalTimeString = tracks.first?.audioPlayer.duration.timeString ?? "-:--"
+            currentTotalTimeString = tracks.referenceAudioPlayer?.duration.timeString ?? "-:--"
             currentValueRange = 0...currentTotalTime
         }
     }
@@ -117,12 +117,16 @@ class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     func setupNewSong() {
         guard index < songs.count else { return }
         self.tracks = songs[index].tracks
-        self.tracks.first?.audioPlayer.delegate = self
+        self.tracks.referenceAudioPlayer?.delegate = self
     }
     
     func seek(to time: Double) {
-        tracks.seek(to: time)
+        tracks.pause()
+        tracks.referenceAudioPlayer?.currentTime = time
         updateTimes()
+        if isPlaying {
+            tracks.playInSync()
+        }
     }
     
     func skip(seconds: Double) {
@@ -131,8 +135,8 @@ class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     }
     
     func updateTimes() {
-        guard tracks.first?.audioPlayer.duration ?? 0 > 0 else { return }
-        currentTime = tracks.first?.audioPlayer.currentTime ?? 0
-        currentTotalTime = tracks.first?.audioPlayer.duration ?? 0
+        guard tracks.referenceAudioPlayer?.duration ?? 0 > 0 else { return }
+        currentTime = tracks.referenceAudioPlayer?.currentTime ?? 0
+        currentTotalTime = tracks.referenceAudioPlayer?.duration ?? 0
     }
 }

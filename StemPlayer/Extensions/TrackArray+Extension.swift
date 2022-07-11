@@ -9,6 +9,10 @@ import Foundation
 import AVFoundation
 
 extension Array where Element == Track {
+    var referenceAudioPlayer: AVAudioPlayer? {
+        return first?.audioPlayer
+    }
+    
     var audioPlayers: [AVAudioPlayer] {
         return map { $0.audioPlayer }
     }
@@ -19,11 +23,5 @@ extension Array where Element == Track {
     
     func pause() {
         audioPlayers.pause()
-    }
-    
-    func seek(to time: Double) {
-        forEach { track in
-            track.audioPlayer.currentTime = time
-        }
     }
 }
