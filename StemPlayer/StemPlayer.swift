@@ -105,11 +105,21 @@ class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         isPlaying ? pause() : play()
     }
     
-    func toggleVolume(of padType: PadType?) {
+    func mute(padType: PadType?) {
         guard let padType = padType else { return }
         tracks.forEach { track in
+            track.isSoloed = false
             guard track.padType == padType else { return }
-            track.audioPlayer.toggleVolume()
+            track.isMuted.toggle()
+        }
+        self.tracks = tracks
+    }
+    
+    func solo(padType: PadType?) {
+        guard let padType = padType else { return }
+        tracks.forEach { track in
+            track.isMuted = track.padType != padType
+            track.isSoloed = track.padType == padType
         }
         self.tracks = tracks
     }

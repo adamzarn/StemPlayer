@@ -10,7 +10,15 @@ import AVFoundation
 
 extension AVAudioPlayer {
     func toggleVolume() {
-        isMuted ? (volume = 1) : (volume = 0)
+        isMuted ? unmute() : mute()
+    }
+    
+    func mute() {
+        volume = 0
+    }
+    
+    func unmute() {
+        volume = 1
     }
     
     var isMuted: Bool {

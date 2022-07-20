@@ -14,6 +14,12 @@ class Track: Identifiable {
     let padType: PadType?
     let ext: String = "wav"
     let audioPlayer: AVAudioPlayer
+    var isMuted: Bool = false {
+        didSet {
+            isMuted ? audioPlayer.mute() : audioPlayer.unmute()
+        }
+    }
+    var isSoloed: Bool = false
     
     init?(fileName: String, padType: PadType? = nil) {
         self.fileName = fileName

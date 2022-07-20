@@ -28,6 +28,7 @@
 		DB6AD09D287A0C04004168DE /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AD09C287A0C04004168DE /* Track.swift */; };
 		DB6AD09F287A0C22004168DE /* PadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AD09E287A0C22004168DE /* PadType.swift */; };
 		DB6AD0A3287A0C70004168DE /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AD0A2287A0C70004168DE /* Song.swift */; };
+		DBEE1DA72888852500E76BEB /* PadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE1DA62888852500E76BEB /* PadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		DB6AD09C287A0C04004168DE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		DB6AD09E287A0C22004168DE /* PadType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadType.swift; sourceTree = "<group>"; };
 		DB6AD0A2287A0C70004168DE /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		DBEE1DA62888852500E76BEB /* PadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				DB136D912879D58300C4F636 /* PlayerView.swift */,
 				DB246D52287B5BF300D00B19 /* ListView.swift */,
+				DBEE1DA62888852500E76BEB /* PadView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				DB246D53287B5BF300D00B19 /* ListView.swift in Sources */,
 				DB246D41287B555D00D00B19 /* TrackArray+Extension.swift in Sources */,
 				DB6AD09D287A0C04004168DE /* Track.swift in Sources */,
+				DBEE1DA72888852500E76BEB /* PadView.swift in Sources */,
 				DB246D5A287B69E100D00B19 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

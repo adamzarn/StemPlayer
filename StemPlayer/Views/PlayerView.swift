@@ -17,26 +17,17 @@ struct PlayerView: View {
         self._stemPlayer = StateObject(wrappedValue: StemPlayer(songs: Songs.all))
     }
     
+    let columns = [GridItem(.flexible()), GridItem(.flexible())]
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
                 Text(stemPlayer.currentSong.name)
                 if stemPlayer.hasPads {
-                    ForEach(stemPlayer.tracks) { track in
-                        VStack {
-                            Text(track.padType?.displayName ?? "")
+                    LazyVGrid(columns: columns) {
+                        ForEach(stemPlayer.tracks) { track in
+                            PadView(stemPlayer: stemPlayer, track: track)
                         }
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 50)
-                        .contentShape(Rectangle())
-                        .onTapGesture {
-                            stemPlayer.toggleVolume(of: track.padType)
-                        }
-                        .padding()
-                        .background(track.audioPlayer.volume == 1 ? .orange : .white)
-                        .overlay(RoundedRectangle(cornerRadius: 16).stroke(.orange, lineWidth: 2))
-                        .cornerRadius(16)
-                        .padding()
                     }
                 }
                 Spacer().frame(height: 20)
