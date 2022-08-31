@@ -16,6 +16,8 @@ class BetterStemPlayer: ObservableObject {
     let timer: Timer.TimerPublisher
     
     @Published var isPlaying: Bool = false
+    @Published var isPaused: Bool = false
+    @Published var isStopped: Bool = true
     @Published var isScrubbing: Bool = false
 
     func loadFile(name: String, ext: String) -> AVAudioFile {
@@ -74,28 +76,36 @@ class BetterStemPlayer: ObservableObject {
     
     func startPlaying() {
         scheduleEffectLoop()
-        for track in nodes { track.play() }
-        isPlaying = true
+        resumePlaying()
     }
     
     func stopPlaying() {
         for track in nodes { track.stop() }
         engine.stop()
         isPlaying = false
+        isStopped = true
     }
     
     func pausePlaying() {
         for track in nodes { track.pause() }
         isPlaying = false
+        isPaused = true
     }
     
     func resumePlaying() {
         for track in nodes { track.play() }
         isPlaying = true
+        isPaused = false
     }
     
     func toggle() {
-        isPlaying ? pausePlaying() : startPlaying()
+        if isPlaying {
+            pausePlaying()
+        } else if isStopped {
+            startPlaying()
+        } else if isPaused {
+            resumePlaying()
+        }
     }
     
     private func scheduleEffectLoop() {
