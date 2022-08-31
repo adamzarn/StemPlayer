@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ListView: View {
     @Environment(\.dismiss) var dismiss: DismissAction
-    @ObservedObject var stemPlayer: StemPlayer
+    @ObservedObject var stemPlayer: BetterStemPlayer
     
     var body: some View {
         NavigationView {
@@ -27,7 +27,7 @@ struct ListView: View {
                     .frame(maxWidth: .infinity)
                     .contentShape(Rectangle())
                     .onTapGesture {
-                        stemPlayer.play(song: song)
+                        // stemPlayer.play(song: song)
                     }
                 }
             }
