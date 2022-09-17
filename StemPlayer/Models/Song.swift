@@ -36,7 +36,6 @@ struct Songs {
                     Track(fileName: "01_HolyHolyHolySoprano", padType: .soprano)
                 ]
             ),
-
             Song(name: "Holy, Holy, Holy - 2 Parts",
                 tracks: [
                     Track(fileName: "01_HolyHolyHolySoprano", padType: .soprano),

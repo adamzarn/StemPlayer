@@ -31,11 +31,11 @@ struct PlayerView: View {
                     }
                 }
                 Spacer().frame(height: 20)
-                // slider
+                slider
                 .padding()
                 .onReceive(stemPlayer.timer) { input in
                     guard stemPlayer.isScrubbing == false else { return }
-                    // stemPlayer.updateTimes()
+                    stemPlayer.updateTimes()
                 }
                 playbackControls
             }
@@ -55,54 +55,54 @@ struct PlayerView: View {
         })
     }
     
-//    var slider: some View {
-//        AZSlider(value: $stemPlayer.currentTime,
-//                 in: stemPlayer.currentValueRange,
-//                 minimumValueLabel: {
-//            Text(stemPlayer.currentTimeString).font(.caption)
-//        },
-//                 maximumValueLabel: {
-//            Text(stemPlayer.currentTotalTimeString).font(.caption)
-//        },
-//                 didStartDragging: didStartDragging,
-//                 didStopDragging: didStopDragging,
-//                 track: {
-//            Capsule()
-//                .foregroundColor(.lightGray)
-//                .frame(maxWidth: .infinity, maxHeight: 4)
-//                .fixedSize(horizontal: false, vertical: true)
-//        }, fill: {
-//            Capsule()
-//                .foregroundColor(.blue)
-//        }, thumb: {
-//            Circle()
-//                .fill(Color.lightGray, strokeBorder: .gray)
-//        }, thumbSize: CGSize(width: 12, height: 12))
-//    }
+    var slider: some View {
+        AZSlider(value: $stemPlayer.currentTime,
+                 in: stemPlayer.currentValueRange,
+                 minimumValueLabel: {
+            Text(stemPlayer.currentTimeString).font(.caption)
+        },
+                 maximumValueLabel: {
+            Text(stemPlayer.currentTotalTimeString).font(.caption)
+        },
+                 didStartDragging: didStartDragging,
+                 didStopDragging: didStopDragging,
+                 track: {
+            Capsule()
+                .foregroundColor(.lightGray)
+                .frame(maxWidth: .infinity, maxHeight: 4)
+                .fixedSize(horizontal: false, vertical: true)
+        }, fill: {
+            Capsule()
+                .foregroundColor(.blue)
+        }, thumb: {
+            Circle()
+                .fill(Color.lightGray, strokeBorder: .gray)
+        }, thumbSize: CGSize(width: 12, height: 12))
+    }
     
     var playbackControls: some View {
         HStack {
-//            Spacer()
-//            Spacer()
-//            Image(systemName: "backward.fill")
-//                .foregroundColor(.gray)
-//                .onTapGesture {
-//                stemPlayer.playPreviousSong()
-//            }
-//            Spacer()
+            Spacer()
+            Spacer()
+            Image(systemName: "backward.fill")
+                .foregroundColor(.gray)
+                .onTapGesture {
+                stemPlayer.playPreviousSong()
+            }
+            Spacer()
             Image(systemName: stemPlayer.isPlaying ? "pause.fill" : "play.fill")
                 .foregroundColor(.gray)
                 .onTapGesture {
                 stemPlayer.toggle()
             }
-//            Spacer()
-//            Image(systemName: "forward.fill")
-//                .foregroundColor(.gray)
-//                .onTapGesture {
-//                stemPlayer.playNextSong()
-//            }
-//            Spacer()
-//            Spacer()
+            Spacer()
+            Image(systemName: "forward.fill")
+                .foregroundColor(.gray)
+                .onTapGesture {
+                stemPlayer.playNextSong()
+            }
+            Spacer()
+            Spacer()
         }
     }
     
@@ -112,7 +112,7 @@ struct PlayerView: View {
     
     func didStopDragging(_ value: Double) {
         stemPlayer.isScrubbing = false
-        // stemPlayer.seek(to: value)
+        stemPlayer.seek(to: value)
     }
 }
 

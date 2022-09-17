@@ -27,7 +27,7 @@ struct ListView: View {
                     .frame(maxWidth: .infinity)
                     .contentShape(Rectangle())
                     .onTapGesture {
-                        // stemPlayer.play(song: song)
+                        stemPlayer.play(song: song)
                     }
                 }
             }
