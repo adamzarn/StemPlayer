@@ -9,6 +9,7 @@ import Foundation
 
 extension Double {
     var timeString: String {
+        guard !isInfinite && !isNaN else { return "" }
         let hours = (Int(self) / 3600)
         let minutes = Int(self / 60) - Int(hours * 60)
         let seconds = Int(self) - (Int(self / 60) * 60)

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct PadView: View {
-    @ObservedObject var stemPlayer: BetterStemPlayer
+    @ObservedObject var stemPlayer: StemPlayer
     let track: Track
     
     var body: some View {
@@ -21,14 +21,14 @@ struct PadView: View {
         .aspectRatio(1, contentMode: .fit)
         .contentShape(Rectangle())
         .onTapGesture {
-            // stemPlayer.mute(padType: track.padType)
+            stemPlayer.mute(padType: track.padType)
         }
         .gesture(
             LongPressGesture(minimumDuration: 0.2).onEnded { _ in
-                // stemPlayer.solo(padType: track.padType)
+                stemPlayer.solo(padType: track.padType)
             }
         )
-        .background(track.audioPlayer.isMuted ? .white : .orange)
+        .background(track.isMuted ? .white : .orange)
         .overlay(RoundedRectangle(cornerRadius: 16).stroke(.orange, lineWidth: 2))
         .cornerRadius(16)
         .padding()
@@ -48,7 +48,7 @@ struct PadView: View {
 
 struct PadView_Previews: PreviewProvider {
     static var previews: some View {
-        PadView(stemPlayer: BetterStemPlayer(songs: []),
+        PadView(stemPlayer: StemPlayer(songs: []),
                 track: Songs.all[4].tracks[0])
         .previewLayout(.sizeThatFits)
     }

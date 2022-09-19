@@ -7,10 +7,27 @@
 
 import Foundation
 
+enum SampleRate {
+    case hertz(_ value: Double)
+    case kilohertz(_ value: Double)
+    
+    var value: Double {
+        switch self {
+        case .hertz(let value): return value
+        case .kilohertz(let value): return value * 1_000
+        }
+    }
+    
+    func asPercentageOf(_ sampleRate: SampleRate) -> Double {
+        return value/sampleRate.value
+    }
+}
+
 class Song: Identifiable, Equatable {
     let id: UUID = UUID()
     let name: String
-    let tracks: [Track]
+    var tracks: [Track]
+    let sampleRate: SampleRate = .kilohertz(44.1)
     
     init(name: String,
          tracks: [Track?]) {

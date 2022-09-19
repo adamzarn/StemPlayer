@@ -10,11 +10,11 @@ import AVFoundation
 import AZSlider
 
 struct PlayerView: View {
-    @StateObject var stemPlayer: BetterStemPlayer
+    @StateObject var stemPlayer: StemPlayer
     @State var listViewIsPresented: Bool = false
     
     init() {
-        self._stemPlayer = StateObject(wrappedValue: BetterStemPlayer(songs: Songs.all))
+        self._stemPlayer = StateObject(wrappedValue: StemPlayer(songs: Songs.all))
     }
     
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
